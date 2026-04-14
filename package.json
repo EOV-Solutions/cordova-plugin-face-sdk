@@ -1,0 +1,43 @@
+{
+    "name": "cordova-plugin-face-sdk",
+    "version": "1.0.0",
+    "description": "Cordova plugin for Face Recognition SDK with enrollment, recognition, and license management",
+    "cordova": {
+        "id": "cordova-plugin-face-sdk",
+        "platforms": [
+            "android",
+            "ios"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/EOV-Solutions/cordova-plugin-face-sdk.git"
+    },
+    "keywords": [
+        "cordova",
+        "ionic",
+        "face-recognition",
+        "face-sdk",
+        "attendance",
+        "biometric",
+        "liveness",
+        "ecosystem:cordova",
+        "cordova-android",
+        "cordova-ios"
+    ],
+    "author": "EOV Solutions",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/EOV-Solutions/cordova-plugin-face-sdk/issues"
+    },
+    "homepage": "https://github.com/EOV-Solutions/cordova-plugin-face-sdk#readme",
+    "engines": {
+        "cordovaDependencies": {
+            ">=1.0.0": {
+                "cordova": ">=10.0.0",
+                "cordova-android": ">=10.0.0",
+                "cordova-ios": ">=6.0.0"
+            }
+        }
+    }
+}

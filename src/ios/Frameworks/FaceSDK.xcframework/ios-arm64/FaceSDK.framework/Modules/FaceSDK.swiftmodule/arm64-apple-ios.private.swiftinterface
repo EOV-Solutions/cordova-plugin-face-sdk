@@ -1,0 +1,609 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name FaceSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+import AVFoundation
+import Accelerate
+@_exported import FaceSDK
+import Foundation
+import SQLite3
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public typealias EOVFaceSession = Swift.UnsafeMutableRawPointer
+public typealias EOVFaceImageStream = Swift.UnsafeMutableRawPointer
+public enum EOVFaceCameraRotation : Swift.Int32 {
+  case rotation0
+  case rotation90
+  case rotation180
+  case rotation270
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int32)
+  #endif
+  public typealias RawValue = Swift.Int32
+  public var rawValue: Swift.Int32 {
+    get
+  }
+}
+public enum EOVFaceDetectMode : Swift.Int32 {
+  case alwaysDetect
+  case lightTrack
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int32)
+  #endif
+  public typealias RawValue = Swift.Int32
+  public var rawValue: Swift.Int32 {
+    get
+  }
+}
+public struct EOVFaceFeature {
+  public let embedding: [Swift.Float]
+  public init(embedding: [Swift.Float])
+}
+public struct EOVFaceRect {
+  public let x: Swift.Int32
+  public let y: Swift.Int32
+  public let width: Swift.Int32
+  public let height: Swift.Int32
+}
+public struct EOVFaceEulerAngle {
+  public let roll: Swift.Float
+  public let yaw: Swift.Float
+  public let pitch: Swift.Float
+}
+public struct EOVFaceData {
+  public let detectedNum: Swift.Int
+  public let tokens: [FaceSDK.EOVFaceBasicToken]
+  public let rects: [FaceSDK.EOVFaceRect]
+  public let angles: [FaceSDK.EOVFaceEulerAngle]
+}
+public struct EOVFaceBasicToken {
+}
+public class EOVFaceCustomParameter {
+  public init()
+  public func enableRecognition(_ enable: Swift.Bool) -> FaceSDK.EOVFaceCustomParameter
+  public func enableFaceQuality(_ enable: Swift.Bool) -> FaceSDK.EOVFaceCustomParameter
+  public func enableMaskDetect(_ enable: Swift.Bool) -> FaceSDK.EOVFaceCustomParameter
+  public func enableLiveness(_ enable: Swift.Bool) -> FaceSDK.EOVFaceCustomParameter
+  public func enableInteractionLiveness(_ enable: Swift.Bool) -> FaceSDK.EOVFaceCustomParameter
+  public func enableFaceAttribute(_ enable: Swift.Bool) -> FaceSDK.EOVFaceCustomParameter
+  public func enableFacePose(_ enable: Swift.Bool) -> FaceSDK.EOVFaceCustomParameter
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class EOVFace {
+  public static func globalLaunch(modelName: Swift.String = "Megatron") -> Swift.Bool
+  public static func globalRelease()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func createSession(params: FaceSDK.EOVFaceCustomParameter, detectMode: FaceSDK.EOVFaceDetectMode = .alwaysDetect, maxFaces: Swift.Int = 10, detectPixelLevel: Swift.Int = -1, trackPixelLevel: Swift.Int = -1) -> FaceSDK.EOVFaceSession?
+  #endif
+  public static func releaseSession(_ session: FaceSDK.EOVFaceSession)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func createImageStream(from image: UIKit.UIImage, rotation: FaceSDK.EOVFaceCameraRotation) -> FaceSDK.EOVFaceImageStream?
+  #endif
+  public static func releaseImageStream(_ stream: FaceSDK.EOVFaceImageStream)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func executeFaceTrack(session: FaceSDK.EOVFaceSession, stream: FaceSDK.EOVFaceImageStream) -> FaceSDK.EOVFaceData?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func extractFaceFeature(session: FaceSDK.EOVFaceSession, stream: FaceSDK.EOVFaceImageStream, token: FaceSDK.EOVFaceBasicToken) -> FaceSDK.EOVFaceFeature?
+  #endif
+  public static func faceComparison(feature1: [Swift.Float], feature2: [Swift.Float]) -> Swift.Float
+  @objc deinit
+}
+public enum FMAttendanceResult {
+  case match(FaceSDK.FMRecognitionData)
+  case noMatch
+  case noFace
+  case error(FaceSDK.FMSDKError)
+}
+public struct FMRecognitionData {
+  public let userId: Swift.String
+  public let userName: Swift.String
+  public let confidence: Swift.Float
+  public let timestamp: Foundation.Date
+  public init(userId: Swift.String, userName: Swift.String, confidence: Swift.Float, timestamp: Foundation.Date = Date())
+  public var confidencePercent: Swift.Int {
+    get
+  }
+}
+public struct FMOrgStats {
+  public let orgId: Swift.String
+  public let enrolledCount: Swift.Int
+  public let activeCount: Swift.Int
+  public let embeddingCount: Swift.Int
+  public init(orgId: Swift.String, enrolledCount: Swift.Int, activeCount: Swift.Int, embeddingCount: Swift.Int)
+}
+public struct FMImportResult {
+  public let importedCount: Swift.Int
+  public let deletedCount: Swift.Int
+  public init(importedCount: Swift.Int, deletedCount: Swift.Int)
+}
+@_hasMissingDesignatedInitializers public class FMDatabase {
+  public static let shared: FaceSDK.FMDatabase
+  @objc deinit
+  public func insertUser(_ user: FaceSDK.FMUserEntity) -> Swift.Bool
+  public func updateUser(_ user: FaceSDK.FMUserEntity) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func getUser(orgId: Swift.String, userId: Swift.String) -> FaceSDK.FMUserEntity?
+  #endif
+  public func getUsersByOrg(_ orgId: Swift.String) -> [FaceSDK.FMUserEntity]
+  public func deleteUser(orgId: Swift.String, userId: Swift.String) -> Swift.Bool
+  public func deleteAllUsersByOrg(orgId: Swift.String) -> Swift.Int
+  public func isUserEnrolled(orgId: Swift.String, userId: Swift.String) -> Swift.Bool
+  public func getUserCount(orgId: Swift.String) -> Swift.Int
+  public func insertEmbedding(_ embedding: FaceSDK.FMUserEmbedding) -> Swift.Bool
+  public func getEmbeddingsForUser(orgId: Swift.String, userId: Swift.String) -> [FaceSDK.FMUserEmbedding]
+  public func getAllEmbeddingsByOrg(_ orgId: Swift.String) -> [FaceSDK.FMUserEmbedding]
+  public func getEmbeddingCount(orgId: Swift.String) -> Swift.Int
+  @discardableResult
+  public func executeInTransaction(_ block: () -> Swift.Bool) -> Swift.Bool
+}
+@_hasMissingDesignatedInitializers public class FMFaceSDK {
+  public static let shared: FaceSDK.FMFaceSDK
+  public var isInitialized: Swift.Bool {
+    get
+  }
+  public typealias LicenseCallback = (Swift.Result<Swift.Void, FaceSDK.FMSDKError>) -> Swift.Void
+  public typealias OrganizationCallback = (Swift.Result<FaceSDK.FMOrgStats, FaceSDK.FMSDKError>) -> Swift.Void
+  public typealias ImportCallback = (Swift.Result<FaceSDK.FMImportResult, FaceSDK.FMSDKError>) -> Swift.Void
+  public typealias AttendanceCallback = (FaceSDK.FMAttendanceResult) -> Swift.Void
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func initializeLicense(licenseKey: Swift.String, faceId: Swift.String? = nil, completion: @escaping FaceSDK.FMFaceSDK.LicenseCallback)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func initializeEngine(completion: @escaping (Swift.Result<Swift.Void, FaceSDK.FMSDKError>) -> Swift.Void)
+  #endif
+  public var isLicenseValid: Swift.Bool {
+    get
+  }
+  public var licenseStatus: FaceSDK.FMLicenseStatus {
+    get
+  }
+  public func incrementUsage()
+  public func setOrganization(_ orgId: Swift.String, completion: @escaping FaceSDK.FMFaceSDK.OrganizationCallback)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var currentOrganization: Swift.String? {
+    get
+  }
+  #endif
+  public func importUsers(_ users: [FaceSDK.FMImportUserRequest], completion: @escaping FaceSDK.FMFaceSDK.ImportCallback)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func registerUser(userId: Swift.String, name: Swift.String, embeddings: [[Swift.Float]], images: [Foundation.Data?] = [], mode: Swift.String = "upsert", completion: @escaping (Swift.Result<Swift.Void, FaceSDK.FMSDKError>) -> Swift.Void)
+  #endif
+  public func isUserEnrolled(_ userId: Swift.String) -> Swift.Bool
+  public func deleteUser(_ userId: Swift.String) -> Swift.Bool
+  public func startAttendance(image: UIKit.UIImage, completion: @escaping FaceSDK.FMFaceSDK.AttendanceCallback)
+  public func recognizeFeature(embedding: [Swift.Float], completion: @escaping FaceSDK.FMFaceSDK.AttendanceCallback)
+  public func setFaceId(_ faceId: Swift.String)
+  public func setUserName(_ userName: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func getUserName() -> Swift.String?
+  #endif
+  public func setRecognitionThreshold(_ threshold: Swift.Float)
+  public func startLiveRecognition(from viewController: UIKit.UIViewController)
+  public func startRegistration(from viewController: UIKit.UIViewController)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func refreshEmbeddings(faceId: Swift.String, completion: @escaping (Swift.Result<(deletedCount: Swift.Int, userId: Swift.String, userName: Swift.String), FaceSDK.FMSDKError>) -> Swift.Void)
+  #endif
+  public func autoSyncFaceData(faceId: Swift.String)
+  public func terminate()
+  @objc deinit
+}
+public enum FMLicenseStatus : Swift.Int {
+  case notInitialized
+  case valid
+  case expired
+  case gracePeriod
+  case invalid
+  case blocked
+  case quotaExceeded
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum FMLicenseMode : Swift.String {
+  case saasCloud
+  case onPremise
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class FMLicenseManager {
+  public static let shared: FaceSDK.FMLicenseManager
+  public var baseURL: Swift.String {
+    get
+  }
+  public var status: FaceSDK.FMLicenseStatus
+  public var isValid: Swift.Bool {
+    get
+  }
+  public var currentStatus: FaceSDK.FMLicenseStatus {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var currentOrgId: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var currentOrgName: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var currentAppName: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var currentFaceId: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var currentLicenseKey: Swift.String? {
+    get
+  }
+  #endif
+  public var isBlocked: Swift.Bool {
+    get
+  }
+  public var currentLicenseMode: FaceSDK.FMLicenseMode {
+    get
+  }
+  public var currentAppType: Swift.String {
+    get
+  }
+  public var currentMaxUsers: Swift.Int {
+    get
+  }
+  public var currentUserCount: Swift.Int {
+    get
+  }
+  public var currentMaxFaceEnrollments: Swift.Int {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var currentCustomerServerUrl: Swift.String? {
+    get
+  }
+  #endif
+  public var faceApiBaseUrl: Swift.String {
+    get
+  }
+  public var isTrainingEnabled: Swift.Bool {
+    get
+  }
+  public var currentTrainingConfidenceThreshold: Swift.Float {
+    get
+  }
+  public func setUserName(_ name: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func getUserName() -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func activate(licenseKey: Swift.String, faceId: Swift.String?, completion: @escaping (Swift.Result<Swift.Void, FaceSDK.FMSDKError>) -> Swift.Void)
+  #endif
+  public func incrementUsage()
+  public func incrementUsage(_ amount: Swift.Int)
+  public func getPendingUsage() -> Swift.Int
+  public func getQuotaThreshold() -> Swift.Int
+  public func shouldSync() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func syncNow(completion: @escaping (Swift.Result<Swift.Void, FaceSDK.FMSDKError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func syncLicense(completion: @escaping (Swift.Result<Swift.Void, FaceSDK.FMSDKError>) -> Swift.Void)
+  #endif
+  public func clear()
+  public struct ReportUserResult {
+    public let success: Swift.Bool
+    public let action: Swift.String
+    public let currentCount: Swift.Int
+    public let maxCount: Swift.Int
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func reportUserRegistration(userId: Swift.String, userName: Swift.String?, completion: @escaping (Swift.Result<FaceSDK.FMLicenseManager.ReportUserResult, any Swift.Error>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func reportUserDeletion(userId: Swift.String, completion: @escaping (Swift.Result<FaceSDK.FMLicenseManager.ReportUserResult, any Swift.Error>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func reportUserSync(userId: Swift.String, userName: Swift.String?, action: Swift.String) throws -> FaceSDK.FMLicenseManager.ReportUserResult
+  #endif
+  @objc deinit
+}
+public enum FMLivenessStep : Swift.CaseIterable {
+  case lookStraight
+  case turnLeft
+  case turnRight
+  case lookUp
+  case lookDown
+  public static func == (a: FaceSDK.FMLivenessStep, b: FaceSDK.FMLivenessStep) -> Swift.Bool
+  public typealias AllCases = [FaceSDK.FMLivenessStep]
+  nonisolated public static var allCases: [FaceSDK.FMLivenessStep] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct FMLiveRecognitionResult {
+  public var userId: Swift.String?
+  public var userName: Swift.String
+  public var confidence: Swift.Float
+  public var isRecognized: Swift.Bool
+  public var isLive: Swift.Bool
+  public var imagePath: Swift.String?
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class FMLiveRecognitionViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor @preconcurrency public var timeoutSeconds: Swift.Int
+  @_Concurrency.MainActor @preconcurrency public var onResult: ((FaceSDK.FMLiveRecognitionResult) -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public var onDismiss: (() -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public var timestampEnabled: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public var timestampPosition: Swift.String
+  @_Concurrency.MainActor @preconcurrency public var timestampFontSize: CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLayoutSubviews()
+  @objc deinit
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
+}
+extension FaceSDK.FMLiveRecognitionViewController : AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class FMMultiStepGraphicOverlay : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public func updateFace(rect: CoreFoundation.CGRect?, matched: Swift.Bool)
+  #endif
+  @_Concurrency.MainActor @preconcurrency public func clear()
+  @_Concurrency.MainActor @preconcurrency public func updateCachedOvalRect()
+  @_Concurrency.MainActor @preconcurrency public func isFaceInsideOverlay(rect: CoreFoundation.CGRect) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func draw(_ rect: CoreFoundation.CGRect)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class FMMultiStepRegisterViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor @preconcurrency public var userId: Swift.String?
+  @_Concurrency.MainActor @preconcurrency public var userName: Swift.String?
+  @_Concurrency.MainActor @preconcurrency public var registrationMode: Swift.String
+  @_Concurrency.MainActor @preconcurrency public var onComplete: (([[Swift.Float]]) -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public var onDismiss: (() -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @objc deinit
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLayoutSubviews()
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
+}
+extension FaceSDK.FMMultiStepRegisterViewController : AVFoundation.AVCapturePhotoCaptureDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func photoOutput(_ output: AVFoundation.AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVFoundation.AVCapturePhoto, error: (any Swift.Error)?)
+  #endif
+}
+extension FaceSDK.FMMultiStepRegisterViewController : AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
+}
+public class FMRepository {
+  public init(database: FaceSDK.FMDatabase = .shared)
+  public func insertUser(_ user: FaceSDK.FMUserEntity) -> Swift.Bool
+  public func updateUser(_ user: FaceSDK.FMUserEntity) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func getUser(orgId: Swift.String, userId: Swift.String) -> FaceSDK.FMUserEntity?
+  #endif
+  public func getUsersByOrg(orgId: Swift.String) -> [FaceSDK.FMUserEntity]
+  public func deleteUser(orgId: Swift.String, userId: Swift.String) -> Swift.Bool
+  public func isUserEnrolled(orgId: Swift.String, userId: Swift.String) -> Swift.Bool
+  public func insertEmbedding(_ embedding: FaceSDK.FMUserEmbedding) -> Swift.Bool
+  public func getEmbeddingsForUser(orgId: Swift.String, userId: Swift.String) -> [FaceSDK.FMUserEmbedding]
+  public func getAllEmbeddings(orgId: Swift.String) -> [FaceSDK.FMUserEmbedding]
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func recognize(orgId: Swift.String, queryEmbedding: [Swift.Float], threshold: Swift.Float? = nil) -> FaceSDK.FMAttendanceResult
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func recognizeBatch(orgId: Swift.String, queryEmbeddings: [[Swift.Float]], threshold: Swift.Float? = nil) -> [FaceSDK.FMAttendanceResult]
+  #endif
+  public func verifyIdentityConsistency(existingEmbeddings: [FaceSDK.FMUserEmbedding], newEmbeddings: [[Swift.Float]], threshold: Swift.Float = 0.40) -> (isSamePerson: Swift.Bool, bestScore: Swift.Float)
+  public func getStats(orgId: Swift.String) -> FaceSDK.FMOrgStats
+  @objc deinit
+}
+public enum FMSDKError : Swift.Error, Foundation.LocalizedError {
+  case notInitialized
+  case noOrganization
+  case licenseInvalid
+  case licenseExpired
+  case quotaExceeded
+  case blocked
+  case networkError(Swift.String)
+  case serverError(Swift.String)
+  case serverSyncError(Swift.String)
+  case databaseError
+  case engineInitFailed
+  case imageProcessingFailed
+  case featureExtractionFailed
+  case invalidEmbeddings
+  case userNotFound
+  case userAlreadyExists
+  case identityMismatchOnReRegister
+  case appMismatch(Swift.String)
+  case unknown(Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var errorDescription: Swift.String? {
+    get
+  }
+  #endif
+  public var errorCode: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class FMServerSync {
+  public static let shared: FaceSDK.FMServerSync
+  public struct EmbeddingItem {
+    public let id: Swift.String?
+    public let embedding: [Swift.Float]
+    public let embeddingVersion: Swift.String
+    public let isPrimary: Swift.Bool
+    public let pose: Swift.String?
+    public let imageUrl: Swift.String?
+    public let createdAt: Swift.String?
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init(id: Swift.String?, embedding: [Swift.Float], embeddingVersion: Swift.String, isPrimary: Swift.Bool, pose: Swift.String?, imageUrl: Swift.String?, createdAt: Swift.String?)
+    #endif
+  }
+  public struct EmbeddingData {
+    public let userId: Swift.String
+    public let name: Swift.String
+    public let embedding: [Swift.Float]?
+    public let embeddingVersion: Swift.String?
+    public let imageUrl: Swift.String?
+    public let updatedAt: Swift.String?
+    public let embeddings: [FaceSDK.FMServerSync.EmbeddingItem]
+    public let totalEmbeddings: Swift.Int
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init(userId: Swift.String, name: Swift.String, embedding: [Swift.Float]?, embeddingVersion: Swift.String?, imageUrl: Swift.String?, updatedAt: Swift.String?, embeddings: [FaceSDK.FMServerSync.EmbeddingItem], totalEmbeddings: Swift.Int)
+    #endif
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func checkFaceEnrolled(faceId: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, FaceSDK.FMSDKError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func downloadEmbedding(for faceId: Swift.String, completion: @escaping (Swift.Result<FaceSDK.FMServerSync.EmbeddingData, FaceSDK.FMSDKError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func uploadFaceRegistration(userId: Swift.String, userName: Swift.String, embedding: [Swift.Float], image: Foundation.Data? = nil, completion: @escaping (Swift.Result<Swift.Void, FaceSDK.FMSDKError>) -> Swift.Void)
+  #endif
+  public struct BatchImageItem {
+    public let pose: Swift.String
+    public let embedding: [Swift.Float]
+    public let image: Foundation.Data?
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init(pose: Swift.String, embedding: [Swift.Float], image: Foundation.Data?)
+    #endif
+  }
+  public struct BatchRegisterResult {
+    public let success: Swift.Bool
+    public let faceId: Swift.String?
+    public let imagesAdded: Swift.Int
+    public let imagesReplaced: Swift.Int
+    public let totalImages: Swift.Int
+    public let message: Swift.String?
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func uploadFaceRegistrationBatch(userId: Swift.String, userName: Swift.String, orgId: Swift.String, images: [FaceSDK.FMServerSync.BatchImageItem], primaryIndex: Swift.Int = 0, completion: @escaping (Swift.Result<FaceSDK.FMServerSync.BatchRegisterResult, FaceSDK.FMSDKError>) -> Swift.Void)
+  #endif
+  @objc deinit
+}
+public struct FMUserEntity {
+  public let orgId: Swift.String
+  public let userId: Swift.String
+  public let name: Swift.String
+  public let active: Swift.Bool
+  public let updatedAt: Foundation.Date
+  public init(orgId: Swift.String, userId: Swift.String, name: Swift.String, active: Swift.Bool = true, updatedAt: Foundation.Date = Date())
+}
+public enum FMPoseType : Swift.Int, Swift.CaseIterable {
+  case front
+  case left
+  case right
+  case up
+  case down
+  public var displayName: Swift.String {
+    get
+  }
+  public var instruction: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func fromString(_ code: Swift.String) -> FaceSDK.FMPoseType?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias AllCases = [FaceSDK.FMPoseType]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [FaceSDK.FMPoseType] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct FMUserEmbedding {
+  public let orgId: Swift.String
+  public let userId: Swift.String
+  public let poseType: FaceSDK.FMPoseType
+  public let embedding: [Swift.Float]
+  public init(orgId: Swift.String, userId: Swift.String, poseType: FaceSDK.FMPoseType, embedding: [Swift.Float])
+}
+public struct FMImportUserRequest {
+  public let userId: Swift.String
+  public let name: Swift.String
+  public let embeddings: [[Swift.Float]]
+  public let isDeleted: Swift.Bool
+  public init(userId: Swift.String, name: Swift.String, embeddings: [[Swift.Float]], isDeleted: Swift.Bool = false)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func fromJSON(_ json: Swift.String) -> [FaceSDK.FMImportUserRequest]?
+  #endif
+}
+@_inheritsConvenienceInitializers @objc public class FaceSDKBridge : ObjectiveC.NSObject {
+  public typealias BridgeCallback = (Swift.String?, Swift.String?) -> Swift.Void
+  @objc public static func initialize(callback: @escaping FaceSDK.FaceSDKBridge.BridgeCallback)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public static func initializeLicense(licenseKey: Swift.String, faceId: Swift.String?, callback: @escaping FaceSDK.FaceSDKBridge.BridgeCallback)
+  #endif
+  @objc public static func setOrganization(_ orgId: Swift.String, callback: @escaping FaceSDK.FaceSDKBridge.BridgeCallback)
+  @objc public static func getCurrentOrganization() -> Swift.String
+  @objc public static func isUserEnrolled(_ userId: Swift.String) -> Swift.String
+  @objc public static func importUsers(_ usersJson: Swift.String, callback: @escaping FaceSDK.FaceSDKBridge.BridgeCallback)
+  @objc public static func recognizeFromBase64(_ base64Image: Swift.String, callback: @escaping FaceSDK.FaceSDKBridge.BridgeCallback)
+  @objc public static func recognizeFromEmbedding(_ embeddingJson: Swift.String, callback: @escaping FaceSDK.FaceSDKBridge.BridgeCallback)
+  @objc public static func getOrgStats() -> Swift.String
+  @objc public static func deleteUser(_ userId: Swift.String) -> Swift.String
+  @objc public static func clearOrganization()
+  @objc public static func terminate()
+  @objc public static func setRecognitionThreshold(_ threshold: Swift.Float)
+  @objc public static func getLicenseStatus() -> Swift.String
+  @objc public static func syncLicense(callback: @escaping FaceSDK.FaceSDKBridge.BridgeCallback)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension FaceSDK.EOVFaceCameraRotation : Swift.Equatable {}
+extension FaceSDK.EOVFaceCameraRotation : Swift.Hashable {}
+extension FaceSDK.EOVFaceCameraRotation : Swift.RawRepresentable {}
+extension FaceSDK.EOVFaceDetectMode : Swift.Equatable {}
+extension FaceSDK.EOVFaceDetectMode : Swift.Hashable {}
+extension FaceSDK.EOVFaceDetectMode : Swift.RawRepresentable {}
+extension FaceSDK.FMLicenseStatus : Swift.Equatable {}
+extension FaceSDK.FMLicenseStatus : Swift.Hashable {}
+extension FaceSDK.FMLicenseStatus : Swift.RawRepresentable {}
+extension FaceSDK.FMLicenseMode : Swift.Equatable {}
+extension FaceSDK.FMLicenseMode : Swift.Hashable {}
+extension FaceSDK.FMLicenseMode : Swift.RawRepresentable {}
+extension FaceSDK.FMLivenessStep : Swift.Equatable {}
+extension FaceSDK.FMLivenessStep : Swift.Hashable {}
+extension FaceSDK.FMPoseType : Swift.Equatable {}
+extension FaceSDK.FMPoseType : Swift.Hashable {}
+extension FaceSDK.FMPoseType : Swift.RawRepresentable {}

@@ -1,0 +1,11 @@
+framework module FaceSDK {
+  umbrella header "FaceSDK.h"
+  export *
+
+  module * { export * }
+}
+
+module FaceSDK.Swift {
+  header "FaceSDK-Swift.h"
+  requires objc
+}

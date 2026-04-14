@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-face-sdk"
+        version="1.0.0">
+
+    <name>FaceSDK</name>
+    <description>Cordova plugin for Face Recognition SDK with enrollment, recognition, and license management</description>
+    <license>MIT</license>
+    <keywords>cordova,face,recognition,sdk,attendance,biometric,liveness</keywords>
+    <author>EOV Solutions</author>
+
+    <engines>
+        <engine name="cordova" version=">=10.0.0" />
+        <engine name="cordova-ios" version=">=6.0.0" />
+        <engine name="cordova-android" version=">=10.0.0" />
+    </engines>
+
+    <!-- JavaScript interface -->
+    <js-module src="www/FaceSDK.js" name="FaceSDK">
+        <clobbers target="FaceSDK" />
+    </js-module>
+
+    <!-- iOS Platform -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="FaceSDK">
+                <param name="ios-package" value="CDVFaceSDK" />
+            </feature>
+        </config-file>
+
+        <!-- Camera permission -->
+        <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
+            <string>This app requires camera access for face recognition and registration.</string>
+        </config-file>
+
+        <!-- Source files -->
+        <source-file src="src/ios/CDVFaceSDK.swift" />
+
+        <!-- Bridging header -->
+        <header-file src="src/ios/cordova-plugin-face-sdk-Bridging-Header.h" />
+
+        <!-- FaceSDK XCFramework -->
+        <framework src="src/ios/Frameworks/FaceSDK.xcframework" custom="true" embed="true" />
+
+        <!-- System frameworks required by FaceSDK -->
+        <framework src="AVFoundation.framework" />
+        <framework src="CoreML.framework" />
+        <framework src="Vision.framework" />
+        <framework src="UIKit.framework" />
+        <framework src="Foundation.framework" />
+        <framework src="Accelerate.framework" />
+        <framework src="Metal.framework" />
+        <framework src="MetalKit.framework" />
+        <framework src="CoreMedia.framework" />
+        <framework src="CoreVideo.framework" />
+        <framework src="libsqlite3.tbd" />
+        <framework src="libc++.tbd" />
+
+        <!-- Build settings -->
+        <preference name="SWIFT_VERSION" default="5.0" />
+    </platform>
+
+    <!-- Android Platform -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="FaceSDK">
+                <param name="android-package" value="com.eov.cordova.facesdk.CDVFaceSDK" />
+            </feature>
+        </config-file>
+
+        <!-- Permissions -->
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.CAMERA" />
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-feature android:name="android.hardware.camera" android:required="true" />
+            <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+        </config-file>
+
+        <!-- Source files -->
+        <source-file src="src/android/CDVFaceSDK.java"
+                     target-dir="java/com/eov/cordova/facesdk" />
+
+        <!-- FaceKit AAR library -->
+        <resource-file src="src/android/libs/facekit-release.aar"
+                       target="libs/facekit-release.aar" />
+
+        <!-- Gradle reference for AAR and dependencies -->
+        <framework src="src/android/facesdk.gradle" custom="true" type="gradleReference" />
+    </platform>
+
+</plugin>

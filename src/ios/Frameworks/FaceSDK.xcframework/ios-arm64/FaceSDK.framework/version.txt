@@ -1,0 +1,2 @@
+InspireFace Version: 1.2.3.post1
+Model: t4
