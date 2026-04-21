@@ -486,6 +486,12 @@ public class CDVFaceSDK extends CordovaPlugin {
             if (options.has("timeoutSeconds")) {
                 intent.putExtra(LiveRecognitionActivity.EXTRA_TIMEOUT_SECONDS, options.getInt("timeoutSeconds"));
             }
+            if (options.has("mode")) {
+                intent.putExtra(LiveRecognitionActivity.EXTRA_RECOGNITION_MODE, options.getString("mode"));
+            }
+            if (options.has("userId")) {
+                intent.putExtra(LiveRecognitionActivity.EXTRA_VERIFY_USER_ID, options.getString("userId"));
+            }
 
             cordova.startActivityForResult(this, intent, REQUEST_RECOGNITION);
         } catch (Exception e) {

@@ -151,7 +151,10 @@ Delete a user from the local database.
 
 Start face recognition with liveness detection (3 random poses).
 
+By default runs in **1:1 verify mode** — compares face only against the user enrolled with `faceId` from `initialize()`. Pass `mode: 'identify'` to search all users in the org (1:N).
+
 ```javascript
+// 1:1 Verify (default) — userId auto-filled from initialize()
 FaceSDK.startRecognition(
   { timeoutSeconds: 30 },
   function(result) {
@@ -168,7 +171,29 @@ FaceSDK.startRecognition(
   },
   function(err) { console.error(err); }
 );
+
+// 1:N Identify — search all enrolled users
+FaceSDK.startRecognition(
+  { mode: 'identify', timeoutSeconds: 30 },
+  function(result) { /* ... */ },
+  function(err) { console.error(err); }
+);
+
+// Verify a specific user (different from the initialized faceId)
+FaceSDK.startRecognition(
+  { mode: 'verify', userId: 'other-user-id' },
+  function(result) { /* ... */ },
+  function(err) { console.error(err); }
+);
 ```
+
+**Options:**
+
+| Option | Type | Default | Description |
+|--------|------|---------|-------------|
+| `mode` | `string` | `'verify'` | `'verify'` (1:1) or `'identify'` (1:N) |
+| `userId` | `string` | faceId from `initialize()` | User to verify against (only used when `mode = 'verify'`) |
+| `timeoutSeconds` | `number` | `30` | Recognition timeout in seconds |
 
 **Response:**
 
@@ -307,9 +332,9 @@ async function initSDK() {
     });
     console.log('Registration:', regResult.success);
 
-    const recResult = await FaceSDK.promise.startRecognition({
-      timeoutSeconds: 30
-    });
+    const recResult = await FaceSDK.promise.startRecognition(
+      { timeoutSeconds: 30 } // mode defaults to 'verify', userId from initialize()
+    );
     if (recResult.success && recResult.isRecognized) {
       console.log('Recognized:', recResult.userId, recResult.confidence);
     }

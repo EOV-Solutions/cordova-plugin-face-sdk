@@ -399,6 +399,8 @@ class CDVFaceSDK: CDVPlugin {
 
             let recognitionVC = FMLiveRecognitionViewController()
             recognitionVC.timeoutSeconds = timeoutSeconds
+            recognitionVC.recognitionMode = options["mode"] as? String ?? "verify"
+            recognitionVC.verifyUserId = options["userId"] as? String
 
             recognitionVC.onResult = { recResult in
                 var imageBase64 = ""

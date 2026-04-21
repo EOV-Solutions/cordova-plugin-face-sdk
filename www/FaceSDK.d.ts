@@ -61,6 +61,10 @@ interface RegistrationResult {
 interface RecognitionOptions {
     /** Recognition timeout in seconds (default: 30) */
     timeoutSeconds?: number;
+    /** Recognition mode: 'verify' (1:1, default) | 'identify' (1:N) */
+    mode?: 'identify' | 'verify';
+    /** User ID to verify against — required when mode is 'verify' */
+    userId?: string;
 }
 
 interface RecognitionResult {

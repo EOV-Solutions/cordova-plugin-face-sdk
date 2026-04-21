@@ -225,6 +225,7 @@ var FaceSDK = {
 
     /**
      * Start face recognition flow with liveness detection (3 random poses)
+     * Uses faceId from initialize() as userId if not explicitly provided (for verify mode)
      * @param {RecognitionOptions} [options={}]
      * @param {function} successCallback
      * @param {function} errorCallback
@@ -238,7 +239,13 @@ var FaceSDK = {
         }
         options = options || {};
 
-        exec(successCallback, errorCallback, SERVICE_NAME, 'startRecognition', [options]);
+        var mergedOptions = {
+            timeoutSeconds: options.timeoutSeconds,
+            mode: options.mode,
+            userId: (options.userId != null && options.userId !== undefined) ? options.userId : _initData.faceId,
+        };
+
+        exec(successCallback, errorCallback, SERVICE_NAME, 'startRecognition', [mergedOptions]);
     },
 
     /**

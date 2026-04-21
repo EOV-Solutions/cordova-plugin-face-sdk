@@ -176,6 +176,7 @@ public struct FMImportResult {
   public func deleteUser(_ userId: Swift.String) -> Swift.Bool
   public func startAttendance(image: UIKit.UIImage, completion: @escaping FaceSDK.FMFaceSDK.AttendanceCallback)
   public func recognizeFeature(embedding: [Swift.Float], completion: @escaping FaceSDK.FMFaceSDK.AttendanceCallback)
+  public func verifyFeature(userId: Swift.String, embedding: [Swift.Float], completion: @escaping FaceSDK.FMFaceSDK.AttendanceCallback)
   public func setFaceId(_ faceId: Swift.String)
   public func setUserName(_ userName: Swift.String)
   #if compiler(>=5.3) && $NonescapableTypes
@@ -351,6 +352,8 @@ public struct FMLiveRecognitionResult {
   @_Concurrency.MainActor @preconcurrency public var timeoutSeconds: Swift.Int
   @_Concurrency.MainActor @preconcurrency public var onResult: ((FaceSDK.FMLiveRecognitionResult) -> Swift.Void)?
   @_Concurrency.MainActor @preconcurrency public var onDismiss: (() -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public var recognitionMode: Swift.String
+  @_Concurrency.MainActor @preconcurrency public var verifyUserId: Swift.String?
   @_Concurrency.MainActor @preconcurrency public var timestampEnabled: Swift.Bool
   @_Concurrency.MainActor @preconcurrency public var timestampPosition: Swift.String
   @_Concurrency.MainActor @preconcurrency public var timestampFontSize: CoreFoundation.CGFloat
