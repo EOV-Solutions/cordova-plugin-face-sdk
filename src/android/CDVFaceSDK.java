@@ -750,6 +750,8 @@ public class CDVFaceSDK extends CordovaPlugin {
 
                 JSONObject result = new JSONObject();
                 result.put("success", true);
+                result.put("status", "ok");
+                result.put("cancelled", false);
                 result.put("isLive", isLive);
                 result.put("isRecognized", isRecognized);
                 result.put("userId", userId != null ? userId : "");
@@ -775,11 +777,43 @@ public class CDVFaceSDK extends CordovaPlugin {
                 result.put("imageBase64", imageBase64);
                 callback.success(result);
             } else {
+                boolean cancelled = true;
+                String errorCode = "E_USER_CANCELLED";
+                String errorMessage = "Recognition cancelled";
+
+                if (data != null) {
+                    cancelled = data.getBooleanExtra(LiveRecognitionActivity.EXTRA_CANCELLED, false);
+                    String intentCode = data.getStringExtra(LiveRecognitionActivity.EXTRA_ERROR_CODE);
+                    String intentMessage = data.getStringExtra(LiveRecognitionActivity.EXTRA_ERROR_MESSAGE);
+                    String legacyError = data.getStringExtra("error");
+
+                    if (intentCode != null && !intentCode.isEmpty()) {
+                        errorCode = intentCode;
+                    } else if (!cancelled) {
+                        errorCode = "E_RECOGNITION_FAILED";
+                    }
+
+                    if (intentMessage != null && !intentMessage.isEmpty()) {
+                        errorMessage = intentMessage;
+                    } else if (legacyError != null && !legacyError.isEmpty()) {
+                        errorMessage = legacyError;
+                    } else if (!cancelled) {
+                        errorMessage = "Recognition failed";
+                    }
+                }
+
                 JSONObject result = new JSONObject();
                 result.put("success", false);
+                result.put("status", cancelled ? "cancelled" : "error");
+                result.put("cancelled", cancelled);
                 result.put("isLive", false);
                 result.put("isRecognized", false);
-                result.put("error", "Recognition cancelled or timeout");
+                result.put("errorCode", errorCode);
+                if (cancelled) {
+                    result.put("message", errorMessage);
+                } else {
+                    result.put("error", errorMessage);
+                }
                 callback.success(result);
             }
         } catch (JSONException e) {

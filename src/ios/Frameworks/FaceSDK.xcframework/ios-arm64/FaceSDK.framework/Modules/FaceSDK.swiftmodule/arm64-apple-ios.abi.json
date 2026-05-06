@@ -17661,1056 +17661,1056 @@
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "StringLiteral",
       "offset": 30505,
-      "length": 29,
-      "value": "\"Format: yyyy-MM-dd HH:mm:ss\""
+      "length": 26,
+      "value": "\"Format: HH:mm dd-MM-yyyy\""
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 30582,
+      "offset": 30579,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 30594,
+      "offset": 30591,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 30701,
+      "offset": 30698,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "StringLiteral",
-      "offset": 30784,
+      "offset": 30781,
       "length": 7,
       "value": "\"Menlo\""
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 30799,
+      "offset": 30796,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 30832,
+      "offset": 30829,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 30910,
+      "offset": 30907,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 30942,
+      "offset": 30939,
       "length": 3,
       "value": "201"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 31156,
+      "offset": 31153,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 31255,
+      "offset": 31252,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "StringLiteral",
-      "offset": 31412,
+      "offset": 31409,
       "length": 12,
       "value": "\"Vị trí:\""
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 31469,
+      "offset": 31466,
       "length": 4,
       "value": "0.67"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 31482,
+      "offset": 31479,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 31529,
+      "offset": 31526,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 31594,
+      "offset": 31591,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 31623,
+      "offset": 31620,
       "length": 3,
       "value": "202"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 31828,
+      "offset": 31825,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 31925,
+      "offset": 31922,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 32122,
+      "offset": 32119,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 32146,
+      "offset": 32143,
       "length": 3,
       "value": "203"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 32255,
+      "offset": 32252,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 32414,
+      "offset": 32411,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 32509,
+      "offset": 32506,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 32607,
+      "offset": 32604,
       "length": 3,
       "value": "-16"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "Array",
-      "offset": 32662,
+      "offset": 32659,
       "length": 82,
       "value": "[\"↖ Trên trái\", \"↗ Trên phải\", \"↙ Dưới trái\", \"↘ Dưới phải\"]"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "Array",
-      "offset": 32772,
+      "offset": 32769,
       "length": 56,
       "value": "[\"top-left\", \"top-right\", \"bottom-left\", \"bottom-right\"]"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 32857,
+      "offset": 32854,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 32861,
+      "offset": 32858,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 32977,
+      "offset": 32974,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 33113,
+      "offset": 33110,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 33117,
+      "offset": 33114,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 33153,
+      "offset": 33150,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 33334,
+      "offset": 33331,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 33379,
+      "offset": 33376,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 33407,
+      "offset": 33404,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 33651,
+      "offset": 33648,
       "length": 2,
       "value": "79"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 33654,
+      "offset": 33651,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 33666,
+      "offset": 33663,
       "length": 2,
       "value": "70"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 33669,
+      "offset": 33666,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 33680,
+      "offset": 33677,
       "length": 3,
       "value": "229"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 33684,
+      "offset": 33681,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 33696,
+      "offset": 33693,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 33841,
+      "offset": 33838,
       "length": 4,
       "value": "0.12"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 33854,
+      "offset": 33851,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 33910,
+      "offset": 33907,
       "length": 4,
       "value": "0.53"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 33923,
+      "offset": 33920,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 34066,
+      "offset": 34063,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "StringLiteral",
-      "offset": 34285,
+      "offset": 34282,
       "length": 41,
       "value": "\"Cỡ chữ: \""
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "StringLiteral",
-      "offset": 34323,
+      "offset": 34320,
       "length": 2,
       "value": "\"px\""
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 34372,
+      "offset": 34369,
       "length": 4,
       "value": "0.67"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 34385,
+      "offset": 34382,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 34433,
+      "offset": 34430,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 34499,
+      "offset": 34496,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 34529,
+      "offset": 34526,
       "length": 3,
       "value": "204"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 34737,
+      "offset": 34734,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 34835,
+      "offset": 34832,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 35039,
+      "offset": 35036,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 35111,
+      "offset": 35108,
       "length": 3,
       "value": "205"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 35224,
+      "offset": 35221,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 35387,
+      "offset": 35384,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 35484,
+      "offset": 35481,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 35584,
+      "offset": 35581,
       "length": 3,
       "value": "-16"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "Array",
-      "offset": 35645,
+      "offset": 35642,
       "length": 24,
       "value": "[16, 20, 24, 32, 40, 48]"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "StringLiteral",
-      "offset": 35791,
+      "offset": 35788,
       "length": 14,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "StringLiteral",
-      "offset": 35804,
+      "offset": 35801,
       "length": 16,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 35876,
+      "offset": 35873,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 35934,
+      "offset": 35931,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 35968,
+      "offset": 35965,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 35995,
+      "offset": 35992,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 36208,
+      "offset": 36205,
       "length": 2,
       "value": "79"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 36211,
+      "offset": 36208,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 36223,
+      "offset": 36220,
       "length": 2,
       "value": "70"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 36226,
+      "offset": 36223,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 36237,
+      "offset": 36234,
       "length": 3,
       "value": "229"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 36241,
+      "offset": 36238,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 36253,
+      "offset": 36250,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 36386,
+      "offset": 36383,
       "length": 4,
       "value": "0.12"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 36399,
+      "offset": 36396,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 36451,
+      "offset": 36448,
       "length": 4,
       "value": "0.53"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 36464,
+      "offset": 36461,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 36595,
+      "offset": 36592,
       "length": 2,
       "value": "36"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 36871,
+      "offset": 36868,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "StringLiteral",
-      "offset": 37056,
+      "offset": 37053,
       "length": 25,
       "value": "\"🔄 Refresh Embeddings\""
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 37155,
+      "offset": 37152,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 37281,
+      "offset": 37278,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 37284,
+      "offset": 37281,
       "length": 3,
       "value": "255"
+    },
+    {
+      "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 37293,
+      "length": 2,
+      "value": "30"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 37296,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 37299,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 37310,
+      "offset": 37307,
       "length": 2,
       "value": "48"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 37313,
+      "offset": 37310,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 37325,
+      "offset": 37322,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 37368,
+      "offset": 37365,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 37395,
+      "offset": 37392,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 37562,
+      "offset": 37559,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 37724,
+      "offset": 37721,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 37823,
+      "offset": 37820,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 37924,
+      "offset": 37921,
       "length": 3,
       "value": "-40"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 37994,
+      "offset": 37991,
       "length": 2,
       "value": "48"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "StringLiteral",
-      "offset": 38161,
+      "offset": 38158,
       "length": 8,
       "value": "\"Đóng\""
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 38241,
+      "offset": 38238,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 38365,
+      "offset": 38362,
       "length": 2,
       "value": "79"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 38368,
+      "offset": 38365,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 38380,
+      "offset": 38377,
       "length": 2,
       "value": "70"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 38383,
+      "offset": 38380,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 38394,
+      "offset": 38391,
       "length": 3,
       "value": "229"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 38398,
+      "offset": 38395,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 38410,
+      "offset": 38407,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 38451,
+      "offset": 38448,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 38608,
+      "offset": 38605,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 38766,
+      "offset": 38763,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 38915,
+      "offset": 38912,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 38983,
+      "offset": 38980,
       "length": 2,
       "value": "44"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 39078,
+      "offset": 39075,
       "length": 3,
       "value": "-40"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "Array",
-      "offset": 41037,
+      "offset": 41034,
       "length": 56,
       "value": "[\"top-left\", \"top-right\", \"bottom-left\", \"bottom-right\"]"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 41125,
+      "offset": 41122,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 41150,
+      "offset": 41147,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 41418,
+      "offset": 41415,
       "length": 2,
       "value": "79"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 41421,
+      "offset": 41418,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 41433,
+      "offset": 41430,
       "length": 2,
       "value": "70"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 41436,
+      "offset": 41433,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 41447,
+      "offset": 41444,
       "length": 3,
       "value": "229"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 41451,
+      "offset": 41448,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 41463,
+      "offset": 41460,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 41504,
+      "offset": 41501,
       "length": 4,
       "value": "0.12"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 41517,
+      "offset": 41514,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 41537,
+      "offset": 41534,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 41541,
+      "offset": 41538,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 41590,
+      "offset": 41587,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 41754,
+      "offset": 41751,
       "length": 4,
       "value": "0.53"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 41767,
+      "offset": 41764,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "Array",
-      "offset": 41921,
+      "offset": 41918,
       "length": 24,
       "value": "[16, 20, 24, 32, 40, 48]"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 41977,
+      "offset": 41974,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 42002,
+      "offset": 41999,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 42219,
+      "offset": 42216,
       "length": 3,
       "value": "204"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "StringLiteral",
-      "offset": 42263,
+      "offset": 42260,
       "length": 41,
       "value": "\"Cỡ chữ: \""
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "StringLiteral",
-      "offset": 42301,
+      "offset": 42298,
       "length": 2,
       "value": "\"px\""
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 42450,
+      "offset": 42447,
       "length": 2,
       "value": "79"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 42453,
+      "offset": 42450,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 42465,
+      "offset": 42462,
       "length": 2,
       "value": "70"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 42468,
+      "offset": 42465,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 42479,
+      "offset": 42476,
       "length": 3,
       "value": "229"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 42483,
+      "offset": 42480,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 42495,
+      "offset": 42492,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 42536,
+      "offset": 42533,
       "length": 4,
       "value": "0.12"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 42549,
+      "offset": 42546,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 42569,
+      "offset": 42566,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 42636,
+      "offset": 42633,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 42800,
+      "offset": 42797,
       "length": 4,
       "value": "0.53"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 42813,
+      "offset": 42810,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/UI\/FMLiveRecognitionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 53753,
+      "offset": 53750,
       "length": 3,
       "value": "100"
     },

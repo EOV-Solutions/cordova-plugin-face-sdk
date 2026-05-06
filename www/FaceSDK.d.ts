@@ -69,6 +69,10 @@ interface RecognitionOptions {
 
 interface RecognitionResult {
     success: boolean;
+    /** Result status: ok for completed flows, cancelled for user close/back, error for native failures */
+    status?: 'ok' | 'cancelled' | 'error';
+    /** True when the recognition UI was closed by the user */
+    cancelled?: boolean;
     /** Whether the face is live (not a photo/video) */
     isLive: boolean;
     /** Whether a user was recognized */
@@ -81,6 +85,10 @@ interface RecognitionResult {
     confidence?: number;
     /** Path to captured face image */
     imagePath?: string;
+    /** Native error code for status='error' or cancellation code for status='cancelled' */
+    errorCode?: string;
+    /** Non-error message, used for user cancellation */
+    message?: string;
     error?: string;
 }
 
