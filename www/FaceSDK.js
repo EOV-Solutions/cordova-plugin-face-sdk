@@ -80,16 +80,12 @@ var _initData = {};
 /**
  * @typedef {Object} RecognitionResult
  * @property {boolean} success
- * @property {'ok'|'cancelled'|'error'} [status]
- * @property {boolean} [cancelled] - True when the recognition UI was closed by the user
  * @property {boolean} isLive - Whether the face is live (not a photo/video)
  * @property {boolean} isRecognized - Whether a user was recognized
  * @property {string} [userId] - User ID if recognized
  * @property {string} [userName] - User name if recognized
  * @property {number} [confidence] - Recognition confidence score (0-1)
  * @property {string} [imagePath] - Path to captured face image
- * @property {string} [errorCode]
- * @property {string} [message] - Non-error message, used for user cancellation
  * @property {string} [error]
  */
 

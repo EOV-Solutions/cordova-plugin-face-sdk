@@ -168,10 +168,10 @@ FaceSDK.startRecognition(
       if (!result.isLive) {
         console.log('Liveness failed or timed out');
       }
-    } else if (result.cancelled) {
+    } else if (result.error === 'Recognition cancelled') {
       console.log('Recognition cancelled by user');
     } else {
-      console.error('Recognition error:', result.errorCode, result.error);
+      console.error('Recognition error:', result.error);
     }
   },
   function(err) { console.error(err); }
@@ -205,8 +205,6 @@ FaceSDK.startRecognition(
 | Field | Type | Description |
 |-------|------|-------------|
 | `success` | `boolean` | `true` if recognition completed |
-| `status` | `string` | `'ok'`, `'cancelled'`, or `'error'` |
-| `cancelled` | `boolean` | `true` when the user closes camera/back |
 | `isLive` | `boolean` | Liveness check passed (not a photo/video) |
 | `isRecognized` | `boolean` | A user was matched |
 | `userId` | `string` | Matched user ID (empty string if not recognized) |
@@ -214,18 +212,16 @@ FaceSDK.startRecognition(
 | `confidence` | `number` | Similarity score (0–1) |
 | `imagePath` | `string` | Path to captured face image |
 | `imageBase64` | `string` | Base64-encoded JPEG image (`data:image/jpeg;base64,...`) |
-| `errorCode` | `string` | Native error code or `E_USER_CANCELLED` |
-| `message` | `string` | Non-error message, used for user cancellation |
-| `error` | `string` | Native error message when `status = 'error'` |
+| `error` | `string` | `Recognition cancelled` on user close, or native error message |
 
 **Result states:**
 
 | Case | Result fields |
 | ---- | ------------- |
-| Completed successfully | `success: true`, `status: 'ok'`, `cancelled: false` |
-| Timeout / liveness failed | `success: true`, `status: 'ok'`, `isLive: false` |
-| User closes camera | `success: false`, `status: 'cancelled'`, `cancelled: true`, `errorCode: 'E_USER_CANCELLED'`, `message: 'Recognition cancelled'` |
-| Native error | `success: false`, `status: 'error'`, `cancelled: false`, `errorCode`, `error` |
+| Completed successfully | `success: true`, `isLive: true` |
+| Timeout / liveness failed | `success: true`, `isLive: false` |
+| User closes camera | `success: false`, `error: 'Recognition cancelled'` |
+| Native error | `success: false`, `error` |
 
 ### Sync
 
@@ -355,10 +351,10 @@ async function initSDK() {
     );
     if (recResult.success && recResult.isRecognized) {
       console.log('Recognized:', recResult.userId, recResult.confidence);
-    } else if (recResult.cancelled) {
+    } else if (recResult.error === 'Recognition cancelled') {
       console.log('Recognition cancelled by user');
-    } else if (recResult.status === 'error') {
-      console.error('Recognition error:', recResult.errorCode, recResult.error);
+    } else if (!recResult.success) {
+      console.error('Recognition error:', recResult.error);
     }
   } catch (err) {
     console.error('Error:', err);

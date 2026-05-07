@@ -412,8 +412,6 @@ class CDVFaceSDK: CDVPlugin {
                 let result = CDVPluginResult(status: CDVCommandStatus.ok,
                                               messageAs: [
                                                   "success": true,
-                                                  "status": "ok",
-                                                  "cancelled": false,
                                                   "isLive": recResult.isLive,
                                                   "isRecognized": recResult.isRecognized,
                                                   "userId": recResult.userId ?? "",
@@ -429,12 +427,9 @@ class CDVFaceSDK: CDVPlugin {
                 let result = CDVPluginResult(status: CDVCommandStatus.ok,
                                               messageAs: [
                                                   "success": false,
-                                                  "status": "cancelled",
-                                                  "cancelled": true,
                                                   "isLive": false,
                                                   "isRecognized": false,
-                                                  "errorCode": "E_USER_CANCELLED",
-                                                  "message": "Recognition cancelled"
+                                                  "error": "Recognition cancelled"
                                               ])
                 self.commandDelegate.send(result, callbackId: command.callbackId)
             }
