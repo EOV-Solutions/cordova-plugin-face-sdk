@@ -132,6 +132,13 @@ interface DeviceCompatibilityResult {
     unsupportedReasons: string[];
 }
 
+interface WaitForEnrollmentSyncOptions {
+    /** Maximum time to wait for local enrollment sync in milliseconds */
+    timeoutMs?: number;
+    /** Delay between enrollment checks in milliseconds */
+    intervalMs?: number;
+}
+
 interface FaceSDKPromise {
     initialize(options: InitializeOptions): Promise<InitializeResult>;
     isLicenseValid(): Promise<LicenseResult>;
@@ -139,6 +146,7 @@ interface FaceSDKPromise {
     getLicenseStatus(): Promise<number>;
     startRegistration(options?: RegistrationOptions): Promise<RegistrationResult>;
     isUserEnrolled(userId: string): Promise<boolean>;
+    waitForEnrollmentSync(userId?: string, options?: WaitForEnrollmentSyncOptions): Promise<boolean>;
     deleteUser(userId: string): Promise<boolean>;
     refreshEmbeddings(faceId?: string): Promise<RefreshResult>;
     startRecognition(options?: RecognitionOptions): Promise<RecognitionResult>;

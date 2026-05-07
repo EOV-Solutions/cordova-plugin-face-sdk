@@ -14,6 +14,12 @@ var SERVICE_NAME = 'FaceSDK';
 // Store initialization data for use in registration
 var _initData = {};
 
+function sleep(ms) {
+    return new Promise(function (resolve) {
+        setTimeout(resolve, ms);
+    });
+}
+
 /**
  * @typedef {Object} InitializeOptions
  * @property {string} licenseKey - License key from server
@@ -348,6 +354,50 @@ FaceSDK.promise = {
     isUserEnrolled: function (userId) {
         return new Promise(function (resolve, reject) {
             FaceSDK.isUserEnrolled(userId, resolve, reject);
+        });
+    },
+    waitForEnrollmentSync: function (userId, options) {
+        return new Promise(function (resolve, reject) {
+            var effectiveUserId = userId || _initData.faceId;
+            var pollOptions = options || {};
+            var timeoutMs = typeof pollOptions.timeoutMs === 'number' ? pollOptions.timeoutMs : 5000;
+            var intervalMs = typeof pollOptions.intervalMs === 'number' ? pollOptions.intervalMs : 400;
+
+            if (!effectiveUserId) {
+                reject({
+                    code: 'E_INVALID_PARAMS',
+                    message: 'userId is required. Pass it as parameter or set faceId in initialize()'
+                });
+                return;
+            }
+
+            if (timeoutMs < 0 || intervalMs <= 0) {
+                reject({
+                    code: 'E_INVALID_PARAMS',
+                    message: 'timeoutMs must be >= 0 and intervalMs must be > 0'
+                });
+                return;
+            }
+
+            var startedAt = Date.now();
+
+            function poll() {
+                FaceSDK.isUserEnrolled(effectiveUserId, function (enrolled) {
+                    if (enrolled) {
+                        resolve(true);
+                        return;
+                    }
+
+                    if (Date.now() - startedAt >= timeoutMs) {
+                        resolve(false);
+                        return;
+                    }
+
+                    sleep(intervalMs).then(poll).catch(reject);
+                }, reject);
+            }
+
+            poll();
         });
     },
     deleteUser: function (userId) {
