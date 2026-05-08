@@ -141,6 +141,19 @@ FaceSDK.startRegistration(
 
 Check if a user is enrolled.
 
+#### `FaceSDK.promise.waitForEnrollmentSync(userId?, options?)`
+
+Wait for background enrollment sync to import the current user's server embedding into the local database after `initialize()`.
+
+Use this when checking enrollment immediately after initialization to avoid a temporary false result while the native auto-sync is still downloading/importing data.
+
+```javascript
+const enrolled = await FaceSDK.promise.waitForEnrollmentSync('user-123', {
+  timeoutMs: 5000,
+  intervalMs: 400
+});
+```
+
 #### `FaceSDK.deleteUser(userId, success, error)`
 
 Delete a user from the local database.
@@ -336,6 +349,12 @@ async function initSDK() {
       userName: 'John Doe'
     });
     console.log('Initialized:', result.success);
+
+    const enrolled = await FaceSDK.promise.waitForEnrollmentSync('user-123', {
+      timeoutMs: 5000,
+      intervalMs: 400
+    });
+    console.log('Enrollment synced locally:', enrolled);
 
     const permission = await FaceSDK.promise.requestPermission();
     console.log('Camera:', permission.granted);
