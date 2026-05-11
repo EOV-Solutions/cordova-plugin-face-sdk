@@ -279,7 +279,7 @@ Request camera permission. Alias: `requestCameraPermission()`.
 
 Check if the current device supports the Face SDK. Should be called **before** `initialize()` to give users early feedback if their device cannot run face recognition.
 
-Checks: front camera, OS version (Android 7+ / iOS 12+), CPU architecture (arm64), RAM (>= 2GB), storage (>= 100MB).
+Checks: front camera, OS version (Android 7+ / iOS 12+), CPU architecture (Android arm64-v8a/armeabi-v7a, iOS arm64), RAM (>= 2GB), storage (>= 100MB).
 
 ```javascript
 FaceSDK.checkDeviceCompatibility(
@@ -295,7 +295,7 @@ FaceSDK.checkDeviceCompatibility(
     var c = result.checks;
     console.log('Front camera:', c.hasFrontCamera);
     console.log('OS supported:', c.osVersionSupported);
-    console.log('CPU arm64:', c.cpuArchSupported);
+    console.log('CPU ABI supported:', c.cpuArchSupported);
     console.log('RAM enough:', c.hasEnoughRAM);
     console.log('Storage enough:', c.hasEnoughStorage);
 
@@ -319,7 +319,7 @@ FaceSDK.checkDeviceCompatibility(
 | `deviceModel` | `string` | Device model identifier |
 | `checks.hasFrontCamera` | `boolean` | Front-facing camera available |
 | `checks.osVersionSupported` | `boolean` | OS meets minimum requirement |
-| `checks.cpuArchSupported` | `boolean` | CPU supports arm64 |
+| `checks.cpuArchSupported` | `boolean` | CPU supports Android arm64-v8a/armeabi-v7a or iOS arm64 |
 | `checks.hasEnoughRAM` | `boolean` | RAM >= 2GB |
 | `checks.hasEnoughStorage` | `boolean` | Free storage >= 100MB |
 | `totalRAM` | `number` | Total RAM in MB |

@@ -554,17 +554,17 @@ public class CDVFaceSDK extends CordovaPlugin {
             boolean osVersionSupported = Build.VERSION.SDK_INT >= 24;
             if (!osVersionSupported) unsupportedReasons.add("Android API " + Build.VERSION.SDK_INT + " is below minimum (24 / Android 7.0)");
 
-            // 3. Check CPU architecture (arm64-v8a required for AI models)
+            // 3. Check CPU architecture (arm64-v8a or armeabi-v7a required for AI models)
             String[] abis = Build.SUPPORTED_ABIS;
             List<String> supportedAbis = abis != null ? Arrays.asList(abis) : new ArrayList<>();
             boolean cpuArchSupported = false;
             for (String abi : supportedAbis) {
-                if (abi.contains("arm64")) {
+                if ("arm64-v8a".equals(abi) || "armeabi-v7a".equals(abi)) {
                     cpuArchSupported = true;
                     break;
                 }
             }
-            if (!cpuArchSupported) unsupportedReasons.add("CPU architecture does not include arm64-v8a");
+            if (!cpuArchSupported) unsupportedReasons.add("CPU architecture does not include arm64-v8a or armeabi-v7a");
 
             // 4. Check RAM (>= 2GB)
             ActivityManager activityManager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
