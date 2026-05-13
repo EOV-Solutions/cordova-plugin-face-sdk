@@ -39,6 +39,8 @@ class CDVFaceSDK: CDVPlugin {
         let faceId = options["faceId"] as? String
         let userName = options["userName"] as? String
         let orgId = options["orgId"] as? String
+        let onPremiseServerUrl = options["onPremiseServerUrl"] as? String
+        let tenantId = (options["tenant_id"] as? String) ?? (options["tenantId"] as? String)
 
         // Set userName to LicenseManager before license activation
         if let name = userName {
@@ -46,7 +48,7 @@ class CDVFaceSDK: CDVPlugin {
         }
 
         // Step 1: Activate license
-        licenseManager.activate(licenseKey: licenseKey, faceId: faceId) { [weak self] licenseResult in
+        licenseManager.activate(licenseKey: licenseKey, faceId: faceId, onPremiseServerUrl: onPremiseServerUrl, tenantId: tenantId) { [weak self] licenseResult in
             guard let self = self else { return }
 
             switch licenseResult {

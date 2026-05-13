@@ -142,6 +142,8 @@ public class CDVFaceSDK extends CordovaPlugin {
         String faceId = options.optString("faceId", null);
         String userName = options.optString("userName", null);
         String orgId = options.optString("orgId", null);
+        String onPremiseServerUrl = options.optString("onPremiseServerUrl", null);
+        String tenantId = options.optString("tenant_id", options.optString("tenantId", null));
 
         if (userName != null && !userName.isEmpty()) {
             FaceSDK.setUserName(userName);
@@ -152,6 +154,8 @@ public class CDVFaceSDK extends CordovaPlugin {
                 cordova.getActivity().getApplicationContext(),
                 licenseKey,
                 faceId,
+                onPremiseServerUrl,
+                tenantId,
                 new FaceSDK.LicenseCallback() {
                     @Override
                     public void onSuccess() {

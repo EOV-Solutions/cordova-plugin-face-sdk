@@ -9,6 +9,12 @@ interface InitializeOptions {
     faceId?: string;
     /** Optional user name (used in registration) */
     userName?: string;
+    /** Optional customer/on-premise Face API base URL. Forces license_mode=ON_PREMISE for Face APIs. */
+    onPremiseServerUrl?: string;
+    /** Optional tenant ID. Sent as tenant_id in register-batch when license_mode is ON_PREMISE. */
+    tenant_id?: string;
+    /** Optional camelCase alias for tenant_id. */
+    tenantId?: string;
 }
 
 interface InitializeResult {

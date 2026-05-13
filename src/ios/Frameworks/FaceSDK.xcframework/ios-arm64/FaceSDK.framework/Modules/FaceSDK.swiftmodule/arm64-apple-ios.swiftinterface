@@ -145,12 +145,16 @@ public struct FMImportResult {
   public var isInitialized: Swift.Bool {
     get
   }
+  public var isAppNameCheckEnabled: Swift.Bool {
+    get
+    set
+  }
   public typealias LicenseCallback = (Swift.Result<Swift.Void, FaceSDK.FMSDKError>) -> Swift.Void
   public typealias OrganizationCallback = (Swift.Result<FaceSDK.FMOrgStats, FaceSDK.FMSDKError>) -> Swift.Void
   public typealias ImportCallback = (Swift.Result<FaceSDK.FMImportResult, FaceSDK.FMSDKError>) -> Swift.Void
   public typealias AttendanceCallback = (FaceSDK.FMAttendanceResult) -> Swift.Void
   #if compiler(>=5.3) && $NonescapableTypes
-  public func initializeLicense(licenseKey: Swift.String, faceId: Swift.String? = nil, completion: @escaping FaceSDK.FMFaceSDK.LicenseCallback)
+  public func initializeLicense(licenseKey: Swift.String, faceId: Swift.String? = nil, onPremiseServerUrl: Swift.String? = nil, tenantId: Swift.String? = nil, completion: @escaping FaceSDK.FMFaceSDK.LicenseCallback)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   public func initializeEngine(completion: @escaping (Swift.Result<Swift.Void, FaceSDK.FMSDKError>) -> Swift.Void)
@@ -225,6 +229,7 @@ public enum FMLicenseMode : Swift.String {
     get
   }
   public var status: FaceSDK.FMLicenseStatus
+  public var isAppNameCheckEnabled: Swift.Bool
   public var isValid: Swift.Bool {
     get
   }
@@ -279,6 +284,11 @@ public enum FMLicenseMode : Swift.String {
     get
   }
   #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var currentTenantId: Swift.String? {
+    get
+  }
+  #endif
   public var faceApiBaseUrl: Swift.String {
     get
   }
@@ -290,10 +300,16 @@ public enum FMLicenseMode : Swift.String {
   }
   public func setUserName(_ name: Swift.String)
   #if compiler(>=5.3) && $NonescapableTypes
+  public func setOnPremiseServerUrl(_ url: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func setTenantId(_ tenantId: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getUserName() -> Swift.String?
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  public func activate(licenseKey: Swift.String, faceId: Swift.String?, completion: @escaping (Swift.Result<Swift.Void, FaceSDK.FMSDKError>) -> Swift.Void)
+  public func activate(licenseKey: Swift.String, faceId: Swift.String?, onPremiseServerUrl: Swift.String? = nil, tenantId: Swift.String? = nil, completion: @escaping (Swift.Result<Swift.Void, FaceSDK.FMSDKError>) -> Swift.Void)
   #endif
   public func incrementUsage()
   public func incrementUsage(_ amount: Swift.Int)
@@ -576,6 +592,12 @@ public struct FMImportUserRequest {
   @objc public static func initialize(callback: @escaping FaceSDK.FaceSDKBridge.BridgeCallback)
   #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func initializeLicense(licenseKey: Swift.String, faceId: Swift.String?, callback: @escaping FaceSDK.FaceSDKBridge.BridgeCallback)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public static func initializeLicense(licenseKey: Swift.String, faceId: Swift.String?, onPremiseServerUrl: Swift.String?, callback: @escaping FaceSDK.FaceSDKBridge.BridgeCallback)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public static func initializeLicense(licenseKey: Swift.String, faceId: Swift.String?, onPremiseServerUrl: Swift.String?, tenantId: Swift.String?, callback: @escaping FaceSDK.FaceSDKBridge.BridgeCallback)
   #endif
   @objc public static func setOrganization(_ orgId: Swift.String, callback: @escaping FaceSDK.FaceSDKBridge.BridgeCallback)
   @objc public static func getCurrentOrganization() -> Swift.String

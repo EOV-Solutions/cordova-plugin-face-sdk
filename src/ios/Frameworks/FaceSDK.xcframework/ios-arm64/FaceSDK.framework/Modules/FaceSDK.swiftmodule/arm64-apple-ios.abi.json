@@ -3535,9 +3535,91 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "isAppNameCheckEnabled",
+            "printedName": "isAppNameCheckEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7FaceSDK06FMFaceB0C21isAppNameCheckEnabledSbvp",
+            "mangledName": "$s7FaceSDK06FMFaceB0C21isAppNameCheckEnabledSbvp",
+            "moduleName": "FaceSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7FaceSDK06FMFaceB0C21isAppNameCheckEnabledSbvg",
+                "mangledName": "$s7FaceSDK06FMFaceB0C21isAppNameCheckEnabledSbvg",
+                "moduleName": "FaceSDK",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7FaceSDK06FMFaceB0C21isAppNameCheckEnabledSbvs",
+                "mangledName": "$s7FaceSDK06FMFaceB0C21isAppNameCheckEnabledSbvs",
+                "moduleName": "FaceSDK",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7FaceSDK06FMFaceB0C21isAppNameCheckEnabledSbvM",
+                "mangledName": "$s7FaceSDK06FMFaceB0C21isAppNameCheckEnabledSbvM",
+                "moduleName": "FaceSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "initializeLicense",
-            "printedName": "initializeLicense(licenseKey:faceId:completion:)",
+            "printedName": "initializeLicense(licenseKey:faceId:onPremiseServerUrl:tenantId:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3549,6 +3631,36 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -3598,8 +3710,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7FaceSDK06FMFaceB0C17initializeLicense10licenseKey6faceId10completionySS_SSSgys6ResultOyytAA10FMSDKErrorOGctF",
-            "mangledName": "$s7FaceSDK06FMFaceB0C17initializeLicense10licenseKey6faceId10completionySS_SSSgys6ResultOyytAA10FMSDKErrorOGctF",
+            "usr": "s:7FaceSDK06FMFaceB0C17initializeLicense10licenseKey6faceId18onPremiseServerUrl06tenantI010completionySS_SSSgA2Jys6ResultOyytAA10FMSDKErrorOGctF",
+            "mangledName": "$s7FaceSDK06FMFaceB0C17initializeLicense10licenseKey6faceId18onPremiseServerUrl06tenantI010completionySS_SSSgA2Jys6ResultOyytAA10FMSDKErrorOGctF",
             "moduleName": "FaceSDK",
             "declAttributes": [
               "AccessControl",
@@ -5409,6 +5521,93 @@
           },
           {
             "kind": "Var",
+            "name": "isAppNameCheckEnabled",
+            "printedName": "isAppNameCheckEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7FaceSDK16FMLicenseManagerC21isAppNameCheckEnabledSbvp",
+            "mangledName": "$s7FaceSDK16FMLicenseManagerC21isAppNameCheckEnabledSbvp",
+            "moduleName": "FaceSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7FaceSDK16FMLicenseManagerC21isAppNameCheckEnabledSbvg",
+                "mangledName": "$s7FaceSDK16FMLicenseManagerC21isAppNameCheckEnabledSbvg",
+                "moduleName": "FaceSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7FaceSDK16FMLicenseManagerC21isAppNameCheckEnabledSbvs",
+                "mangledName": "$s7FaceSDK16FMLicenseManagerC21isAppNameCheckEnabledSbvs",
+                "moduleName": "FaceSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7FaceSDK16FMLicenseManagerC21isAppNameCheckEnabledSbvM",
+                "mangledName": "$s7FaceSDK16FMLicenseManagerC21isAppNameCheckEnabledSbvM",
+                "moduleName": "FaceSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "isValid",
             "printedName": "isValid",
             "children": [
@@ -6072,6 +6271,63 @@
           },
           {
             "kind": "Var",
+            "name": "currentTenantId",
+            "printedName": "currentTenantId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7FaceSDK16FMLicenseManagerC15currentTenantIdSSSgvp",
+            "mangledName": "$s7FaceSDK16FMLicenseManagerC15currentTenantIdSSSgvp",
+            "moduleName": "FaceSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7FaceSDK16FMLicenseManagerC15currentTenantIdSSSgvg",
+                "mangledName": "$s7FaceSDK16FMLicenseManagerC15currentTenantIdSSSgvg",
+                "moduleName": "FaceSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "faceApiBaseUrl",
             "printedName": "faceApiBaseUrl",
             "children": [
@@ -6222,6 +6478,76 @@
           },
           {
             "kind": "Function",
+            "name": "setOnPremiseServerUrl",
+            "printedName": "setOnPremiseServerUrl(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7FaceSDK16FMLicenseManagerC21setOnPremiseServerUrlyySSSgF",
+            "mangledName": "$s7FaceSDK16FMLicenseManagerC21setOnPremiseServerUrlyySSSgF",
+            "moduleName": "FaceSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setTenantId",
+            "printedName": "setTenantId(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7FaceSDK16FMLicenseManagerC11setTenantIdyySSSgF",
+            "mangledName": "$s7FaceSDK16FMLicenseManagerC11setTenantIdyySSSgF",
+            "moduleName": "FaceSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getUserName",
             "printedName": "getUserName()",
             "children": [
@@ -6253,7 +6579,7 @@
           {
             "kind": "Function",
             "name": "activate",
-            "printedName": "activate(licenseKey:faceId:completion:)",
+            "printedName": "activate(licenseKey:faceId:onPremiseServerUrl:tenantId:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6278,6 +6604,36 @@
                     "usr": "s:SS"
                   }
                 ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               },
               {
@@ -6313,8 +6669,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7FaceSDK16FMLicenseManagerC8activate10licenseKey6faceId10completionySS_SSSgys6ResultOyytAA10FMSDKErrorOGctF",
-            "mangledName": "$s7FaceSDK16FMLicenseManagerC8activate10licenseKey6faceId10completionySS_SSSgys6ResultOyytAA10FMSDKErrorOGctF",
+            "usr": "s:7FaceSDK16FMLicenseManagerC8activate10licenseKey6faceId18onPremiseServerUrl06tenantI010completionySS_SSSgA2Jys6ResultOyytAA10FMSDKErrorOGctF",
+            "mangledName": "$s7FaceSDK16FMLicenseManagerC8activate10licenseKey6faceId18onPremiseServerUrl06tenantI010completionySS_SSSgA2Jys6ResultOyytAA10FMSDKErrorOGctF",
             "moduleName": "FaceSDK",
             "declAttributes": [
               "AccessControl",
@@ -15959,6 +16315,230 @@
           },
           {
             "kind": "Function",
+            "name": "initializeLicense",
+            "printedName": "initializeLicense(licenseKey:faceId:onPremiseServerUrl:callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String?, Swift.String?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String?, Swift.String?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@FaceSDK@objc(cs)FaceSDKBridge(cm)initializeLicenseWithLicenseKey:faceId:onPremiseServerUrl:callback:",
+            "mangledName": "$s7FaceSDK0A9SDKBridgeC17initializeLicense10licenseKey6faceId18onPremiseServerUrl8callbackySS_SSSgAIyAI_AItctFZ",
+            "moduleName": "FaceSDK",
+            "static": true,
+            "objc_name": "initializeLicenseWithLicenseKey:faceId:onPremiseServerUrl:callback:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initializeLicense",
+            "printedName": "initializeLicense(licenseKey:faceId:onPremiseServerUrl:tenantId:callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String?, Swift.String?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String?, Swift.String?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@FaceSDK@objc(cs)FaceSDKBridge(cm)initializeLicenseWithLicenseKey:faceId:onPremiseServerUrl:tenantId:callback:",
+            "mangledName": "$s7FaceSDK0A9SDKBridgeC17initializeLicense10licenseKey6faceId18onPremiseServerUrl06tenantI08callbackySS_SSSgA2JyAJ_AJtctFZ",
+            "moduleName": "FaceSDK",
+            "static": true,
+            "objc_name": "initializeLicenseWithLicenseKey:faceId:onPremiseServerUrl:tenantId:callback:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setOrganization",
             "printedName": "setOrganization(_:callback:)",
             "children": [
@@ -16848,14 +17428,14 @@
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/Swift\/FMFaceSDK.swift",
       "kind": "Array",
-      "offset": 7814,
+      "offset": 8747,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/Swift\/FMFaceSDK.swift",
       "kind": "StringLiteral",
-      "offset": 7841,
+      "offset": 8774,
       "length": 8,
       "value": "\"upsert\""
     },
@@ -16925,203 +17505,217 @@
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/License\/FMLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 1544,
+      "offset": 1630,
       "length": 6,
       "value": "\"USER\""
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/License\/FMLicenseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1660,
+      "offset": 1746,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/License\/FMLicenseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1743,
+      "offset": 1829,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/License\/FMLicenseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1780,
+      "offset": 1866,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/License\/FMLicenseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1821,
+      "offset": 1907,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/License\/FMLicenseManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2053,
+      "offset": 2129,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/License\/FMLicenseManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2218,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/License\/FMLicenseManager.swift",
       "kind": "FloatLiteral",
-      "offset": 2112,
+      "offset": 2277,
       "length": 3,
       "value": "0.7"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/License\/FMLicenseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2181,
+      "offset": 2346,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/License\/FMLicenseManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2221,
+      "offset": 2386,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/License\/FMLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 2324,
+      "offset": 2489,
       "length": 18,
       "value": "\"fm_license_token\""
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/License\/FMLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 2379,
+      "offset": 2544,
       "length": 18,
       "value": "\"fm_pending_usage\""
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/License\/FMLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 2430,
+      "offset": 2595,
       "length": 14,
       "value": "\"fm_last_sync\""
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/License\/FMLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 2475,
+      "offset": 2640,
       "length": 12,
       "value": "\"fm_face_id\""
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/License\/FMLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 2520,
+      "offset": 2685,
       "length": 14,
       "value": "\"fm_user_name\""
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/License\/FMLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 2564,
+      "offset": 2729,
       "length": 11,
       "value": "\"fm_org_id\""
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/License\/FMLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 2607,
+      "offset": 2772,
       "length": 13,
       "value": "\"fm_org_name\""
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/License\/FMLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 2652,
+      "offset": 2817,
       "length": 13,
       "value": "\"fm_app_name\""
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/License\/FMLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 2697,
+      "offset": 2862,
       "length": 13,
       "value": "\"fm_app_type\""
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/License\/FMLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 2754,
+      "offset": 2919,
       "length": 25,
       "value": "\"fm_max_face_enrollments\""
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/License\/FMLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 2812,
+      "offset": 2977,
       "length": 14,
       "value": "\"fm_max_users\""
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/License\/FMLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 2863,
+      "offset": 3028,
       "length": 18,
       "value": "\"fm_current_users\""
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/License\/FMLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 2917,
+      "offset": 3082,
       "length": 17,
       "value": "\"fm_license_mode\""
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/License\/FMLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 2977,
+      "offset": 3142,
       "length": 24,
       "value": "\"fm_customer_server_url\""
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/License\/FMLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 3041,
+      "offset": 3199,
+      "length": 14,
+      "value": "\"fm_tenant_id\""
+    },
+    {
+      "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/License\/FMLicenseManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3253,
       "length": 21,
       "value": "\"fm_training_enabled\""
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/License\/FMLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 3115,
+      "offset": 3327,
       "length": 34,
       "value": "\"fm_training_confidence_threshold\""
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/License\/FMLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 3193,
+      "offset": 3405,
       "length": 25,
       "value": "\"fm_blocked_due_to_quota\""
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/License\/FMLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 3257,
+      "offset": 3469,
       "length": 20,
       "value": "\"fm_expiration_date\""
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/License\/FMLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 3312,
+      "offset": 3524,
       "length": 16,
       "value": "\"fm_license_key\""
     },
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/License\/FMLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 3362,
+      "offset": 3574,
       "length": 15,
       "value": "\"fm_grace_days\""
     },
@@ -19256,7 +19850,7 @@
     {
       "filePath": "\/Users\/eov-mac\/code\/sdk_face\/iOS-SDK-Face\/FaceSDK\/License\/FMServerSync.swift",
       "kind": "IntegerLiteral",
-      "offset": 14427,
+      "offset": 16967,
       "length": 1,
       "value": "0"
     },

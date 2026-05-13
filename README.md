@@ -54,7 +54,9 @@ FaceSDK.initialize(
   {
     licenseKey: 'YOUR_LICENSE_KEY',
     faceId: 'user-face-id',        // optional, used as userId in registration
-    userName: 'John Doe'             // optional, used in registration
+    userName: 'John Doe',          // optional, used in registration
+    onPremiseServerUrl: 'https://customer.example.com', // optional, force ON_PREMISE Face APIs
+    tenant_id: 'tenant_001'        // optional, sent in ON_PREMISE register-batch
   },
   function(result) {
     console.log('SDK initialized:', result.success);
@@ -64,6 +66,8 @@ FaceSDK.initialize(
   }
 );
 ```
+
+If `onPremiseServerUrl` is provided, the SDK stores `license_mode=ON_PREMISE` and uses that URL for Face APIs. License activation/verification still goes to the central EOV license server. If `tenant_id` is provided, `register-batch` sends it as `tenant_id` in ON_PREMISE mode.
 
 #### `FaceSDK.isLicenseValid(success, error)`
 
@@ -346,7 +350,9 @@ async function initSDK() {
     const result = await FaceSDK.promise.initialize({
       licenseKey: 'YOUR_KEY',
       faceId: 'user-123',
-      userName: 'John Doe'
+      userName: 'John Doe',
+      onPremiseServerUrl: 'https://customer.example.com',
+      tenant_id: 'tenant_001'
     });
     console.log('Initialized:', result.success);
 
@@ -399,7 +405,9 @@ declare var FaceSDK: any;
 // In your component
 async initFaceSDK() {
   const result = await FaceSDK.promise.initialize({
-    licenseKey: 'YOUR_KEY'
+    licenseKey: 'YOUR_KEY',
+    onPremiseServerUrl: 'https://customer.example.com',
+    tenant_id: 'tenant_001'
   });
 }
 ```

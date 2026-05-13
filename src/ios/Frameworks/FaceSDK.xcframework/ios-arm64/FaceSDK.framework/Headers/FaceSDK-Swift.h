@@ -363,6 +363,8 @@ SWIFT_CLASS("_TtC7FaceSDK13FaceSDKBridge")
 @interface FaceSDKBridge : NSObject
 + (void)initializeWithCallback:(void (^ _Nonnull)(NSString * _Nullable, NSString * _Nullable))callback;
 + (void)initializeLicenseWithLicenseKey:(NSString * _Nonnull)licenseKey faceId:(NSString * _Nullable)faceId callback:(void (^ _Nonnull)(NSString * _Nullable, NSString * _Nullable))callback;
++ (void)initializeLicenseWithLicenseKey:(NSString * _Nonnull)licenseKey faceId:(NSString * _Nullable)faceId onPremiseServerUrl:(NSString * _Nullable)onPremiseServerUrl callback:(void (^ _Nonnull)(NSString * _Nullable, NSString * _Nullable))callback;
++ (void)initializeLicenseWithLicenseKey:(NSString * _Nonnull)licenseKey faceId:(NSString * _Nullable)faceId onPremiseServerUrl:(NSString * _Nullable)onPremiseServerUrl tenantId:(NSString * _Nullable)tenantId callback:(void (^ _Nonnull)(NSString * _Nullable, NSString * _Nullable))callback;
 + (void)setOrganization:(NSString * _Nonnull)orgId callback:(void (^ _Nonnull)(NSString * _Nullable, NSString * _Nullable))callback;
 + (NSString * _Nonnull)getCurrentOrganization SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)isUserEnrolled:(NSString * _Nonnull)userId SWIFT_WARN_UNUSED_RESULT;
